@@ -50,7 +50,7 @@ def launch(config: dict, ssh_authorized_keys: str):
                 ),
                 availability_domain=domains.data[0].name,
                 compartment_id=comp_id['compartment_id'],
-                display_name="koba-main-server",
+                display_name="VM.Standard.A1.Flex",
                 shape='VM.Standard.A1.Flex',
                 create_vnic_details=oci.core.models.CreateVnicDetails(
                     assign_public_ip=True,
